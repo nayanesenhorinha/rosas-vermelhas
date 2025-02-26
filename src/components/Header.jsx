@@ -202,6 +202,33 @@ useEffect(() => {
 }, []);
 
 
+const updateThemeColor = (isDarkMode, isHeaderVisible) => {
+  const metaThemeColor = document.querySelector("meta[name='theme-color']");
+  const metaBackgroundColor = document.querySelector("meta[name='background-color']");
+
+  let newThemeColor;
+  let newBackgroundColor;
+
+  if (isDarkMode) {
+    newThemeColor = "#000000"; // Preto no modo noturno
+    newBackgroundColor = "#000000";
+  } else if (isHeaderVisible) {
+    newThemeColor = "#FFC0CB"; // Rosa quando o Header está visível
+    newBackgroundColor = "#FFFFFF"; // Branco como fundo
+  } else {
+    newThemeColor = "#FFFFFF"; // Branco como padrão
+    newBackgroundColor = "#FFFFFF";
+  }
+
+  if (metaThemeColor) metaThemeColor.setAttribute("content", newThemeColor);
+  if (metaBackgroundColor) metaBackgroundColor.setAttribute("content", newBackgroundColor);
+};
+
+useEffect(() => {
+  updateThemeColor(isDarkMode, isHeaderVisible);
+}, [isDarkMode, isHeaderVisible]);
+
+
 
 return (
 <div className="header">
