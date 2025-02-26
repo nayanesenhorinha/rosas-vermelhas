@@ -5,7 +5,7 @@ import Header from '../components/Header';
 
 const Credits = ({onNext, onPrev, goToSummary}) => {
 
-  const chapterTitle = "Credits";
+  const chapterTitle = "Pintando as Rosas de Vermelho";
   
     useEffect(() => {
       const bookTitleT = book_infos.title; 
@@ -22,32 +22,33 @@ const Credits = ({onNext, onPrev, goToSummary}) => {
       
       
       <div className='credits_container'>
-        <p className='thead'>Pintando as rosas de vermelho</p>
 
         <img 
         src="https://placehold.co/25" 
         alt="Imagem Placeholder" 
         loading="lazy" 
       />
+   
+
+        
         <div className='tr'>
           <p className='th ft'>Ilustração, capas e webdesigner</p>
           <p className='th'>Nayane de Souza</p>
         </div>
         
         <div className='tr'>
-          <p className='th ft'>Texto</p>
-          <p className='th'>Projeto Gutemberg</p>
-        </div>
-
-        <div className='tr'>
           <p className='th ft'>Revisão</p>
           <p className='th'>Nomes</p>
         </div>
 
         <div className='tr'>
-          <p className='th ft'>Programação</p>
-          <p className='th'>Nayane de Souza</p>
+          <p className='th ft'>Texto</p>
+          <p className='th'>Projeto Gutemberg</p>
         </div>
+
+        
+
+
 
         <div className='tr'>
           <p className='th ft'>Agradecimentos</p>
@@ -63,7 +64,7 @@ const Credits = ({onNext, onPrev, goToSummary}) => {
         onNext={onNext} 
         goToSummary={goToSummary} 
         />
-      <Header title={"Credits"}/>
+      <Header title={chapterTitle}/>
     </div>
   );
 };

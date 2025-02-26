@@ -321,7 +321,7 @@ body {
     position: fixed;
     top: -3.125rem; 
     width: 100%;
-    max-width: 500px;
+    max-width: 900px;
     height: 3.125rem;
     display: flex;
     flex-direction: row;
@@ -361,10 +361,10 @@ body {
 
 .menu-config {
     position: fixed;
-    background-color: var(--rosa);
+    background-color: var(--preto);
     width: 100%;
     height: 50px;
-    max-width: 500px;
+    max-width: 900px;
     margin-left: -2.6rem;
     bottom: -100%; 
     display: flex;
@@ -396,7 +396,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
 }
 
 .menu-config span {
@@ -409,7 +409,7 @@ body {
     border-radius: 1px;
     color: transparent;
     height: 20px;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .menu-config button {
@@ -536,13 +536,14 @@ body {
 }
 
 .credits_container img {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 2rem;
 }
 
 .thead {
     color: var(--vermelho);
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .tfooter {
@@ -565,7 +566,7 @@ body {
     width: 50%;
     text-align: left;
     padding:  0 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.6rem;
 }
 
@@ -645,7 +646,8 @@ body.dark-mode {
     position: absolute;
     max-width: 80%;
     bottom: 80px;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: var(--branco);
     padding: 20px;
     border-radius: 8px;
