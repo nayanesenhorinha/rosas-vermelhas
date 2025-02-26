@@ -10,6 +10,8 @@ const [selectedFontSize, setSelectedFontSize] = useState('padrão');
 const [isFontSizeBoxVisible, setFontSizeBoxVisible] = useState(false);
 const [selectedAlignment, setSelectedAlignment] = useState(localStorage.getItem('alignment') || 'justificado');
 const [showTitle, setShowTitle] = useState(false); 
+const [isHeaderVisible, setIsHeaderVisible] = useState(true); // Estado para visibilidade do header
+
 
 // Variáveis
 
@@ -40,9 +42,11 @@ const handleScroll = useCallback(() => {
   if (headerElement) {
     if (isScrollingUp) {
       headerElement.classList.add('visible');
+      setIsHeaderVisible(true); // Atualiza estado
     } else {
       headerElement.classList.remove('visible');
       setFontSizeBoxVisible(false);
+      setIsHeaderVisible(false); // Atualiza estado
     }
   }
 
@@ -202,6 +206,12 @@ useEffect(() => {
 }, []);
 
 
+
+
+
+
+
+// Atualiza o tema com base na visibilidade do cabeçalho e no modo escuro
 const updateThemeColor = (isDarkMode, isHeaderVisible) => {
   const metaThemeColor = document.querySelector("meta[name='theme-color']");
   const metaBackgroundColor = document.querySelector("meta[name='background-color']");
@@ -224,9 +234,13 @@ const updateThemeColor = (isDarkMode, isHeaderVisible) => {
   if (metaBackgroundColor) metaBackgroundColor.setAttribute("content", newBackgroundColor);
 };
 
+// Atualiza o tema quando `isDarkMode` ou `isHeaderVisible` mudam
 useEffect(() => {
   updateThemeColor(isDarkMode, isHeaderVisible);
 }, [isDarkMode, isHeaderVisible]);
+
+
+
 
 
 
