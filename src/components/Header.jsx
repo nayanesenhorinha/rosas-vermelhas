@@ -192,7 +192,6 @@ useEffect(() => {
   }
 }, [isDarkMode, selectedFontSize, selectedAlignment]); 
 
-
 // Adiciona event listeners para rolagem e toque
 useEffect(() => {
   window.addEventListener('scroll', handleScroll);
@@ -205,9 +204,6 @@ useEffect(() => {
   
 }, [handleScroll, handleTouch]);
 
-
-
-
 useEffect(() => {
   if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("/sw.js").then(() => {
@@ -216,28 +212,18 @@ useEffect(() => {
   }
 }, []);
 
-
-
-
-
-
-
 // Atualiza o tema com base na visibilidade do cabeçalho e no modo escuro
 const updateThemeColor = (isDarkMode, isHeaderVisible) => {
   const metaThemeColor = document.querySelector("meta[name='theme-color']");
 
   let newThemeColor;
-  let newBackgroundColor;
 
   if (isDarkMode) {
-    newThemeColor = "#000000"; // Preto no modo noturno
-    console.log("Preto");
+    newThemeColor = "#131313"; // Preto no modo noturno
   } else if (isHeaderVisible) {
-    newThemeColor = "#FFC0CB"; // Rosa quando o Header está visível
-    console.log("Rosa");
+    newThemeColor = "#F06CA3"; // Rosa quando o Header está visível
   } else {
-    newThemeColor = "#FFFFFF"; // Branco como padrão
-    console.log("Branco");
+    newThemeColor = "#fefefe"; // Branco como padrão
   }
 
   if (metaThemeColor) metaThemeColor.setAttribute("content", newThemeColor);
@@ -248,11 +234,6 @@ const updateThemeColor = (isDarkMode, isHeaderVisible) => {
 useEffect(() => {
   updateThemeColor(isDarkMode, isHeaderVisible);
 }, [isDarkMode, isHeaderVisible]);
-
-
-
-
-
 
 return (
 <div className="header">

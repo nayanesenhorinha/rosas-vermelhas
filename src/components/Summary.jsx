@@ -104,13 +104,14 @@ useEffect(() => {
 
       {Object.entries(chapters_looking_glass).slice(1).map(([chapterNumber, chapterData], index) => (
       <div key={chapterNumber} className="menu-item">
-        <span className="menu-index iop">{chapterData.chap}</span>
+        {/* <span className="menu-index iop">{chapterData.chap}</span> */}
+        
         <button 
           className="menu-button" 
           onClick={() => goToChapter(Number(chapterNumber) + 17)}>
             {chapterData.title}
         </button>
-        <span className="menu-index">{Number(chapterNumber)}</span>
+        {/*<span className="menu-index">{Number(chapterNumber)}</span>*/}
       </div>
     ))}
     
