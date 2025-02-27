@@ -19,7 +19,8 @@ const [selectedFontSize, setSelectedFontSize] = useState('padrão');
 const [isFontSizeBoxVisible, setFontSizeBoxVisible] = useState(false);
 const [selectedAlignment, setSelectedAlignment] = useState(localStorage.getItem('alignment') || 'justificado');
 const [showTitle, setShowTitle] = useState(false); 
-const [isHeaderVisible, setIsHeaderVisible] = useState(true); // Estado para visibilidade do header
+
+const [isHeaderVisible, setIsHeaderVisible] = useState(false); // Estado para visibilidade do header
 
 
 // Variáveis
@@ -77,6 +78,7 @@ const handleTouch = useCallback(() => {
   if (headerElement) {
     if (currentTime - lastTouchTime < 300) {
       headerElement.classList.toggle('visible');
+      setIsHeaderVisible((prev) => !prev);  
       setFontSizeBoxVisible(false);
     }
     localStorage.setItem('lastTouchTime', currentTime);
@@ -223,24 +225,23 @@ useEffect(() => {
 // Atualiza o tema com base na visibilidade do cabeçalho e no modo escuro
 const updateThemeColor = (isDarkMode, isHeaderVisible) => {
   const metaThemeColor = document.querySelector("meta[name='theme-color']");
-  const metaBackgroundColor = document.querySelector("meta[name='background-color']");
 
   let newThemeColor;
   let newBackgroundColor;
 
   if (isDarkMode) {
     newThemeColor = "#000000"; // Preto no modo noturno
-    newBackgroundColor = "#000000";
+    console.log("Preto");
   } else if (isHeaderVisible) {
     newThemeColor = "#FFC0CB"; // Rosa quando o Header está visível
-    newBackgroundColor = "#FFFFFF"; // Branco como fundo
+    console.log("Rosa");
   } else {
     newThemeColor = "#FFFFFF"; // Branco como padrão
-    newBackgroundColor = "#FFFFFF";
+    console.log("Branco");
   }
 
   if (metaThemeColor) metaThemeColor.setAttribute("content", newThemeColor);
-  if (metaBackgroundColor) metaBackgroundColor.setAttribute("content", newBackgroundColor);
+
 };
 
 // Atualiza o tema quando `isDarkMode` ou `isHeaderVisible` mudam
