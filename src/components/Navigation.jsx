@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import menuBurger from '../assets/menu-burger.png';
+import setaEsquerda from '../assets/seta-esquerda.png';
+import setaDireita from '../assets/seta-direita.png';
 
 const Navigation = ({ onNext, goToSummary, goToCover, onPrev }) => {
   
@@ -11,7 +14,7 @@ const Navigation = ({ onNext, goToSummary, goToCover, onPrev }) => {
       
         {goToSummary && (<button onClick={goToSummary}>
           <img
-            src="https://raw.githubusercontent.com/nayanesenhorinha/servidor_estaticos/refs/heads/main/alice/fi-rr-menu-burger.png"
+            src={menuBurger}
             alt="Cover"
             className="nav-icon"
             loading="lazy"
@@ -23,7 +26,7 @@ const Navigation = ({ onNext, goToSummary, goToCover, onPrev }) => {
       {onPrev && (
         <button onClick={onPrev}>
           <img
-            src="https://raw.githubusercontent.com/nayanesenhorinha/servidor_estaticos/refs/heads/main/alice/fi-rr-angle-small-left.png"
+            src={setaEsquerda}
             alt="Cover"
             className="nav-icon"
             loading="lazy"
@@ -34,7 +37,7 @@ const Navigation = ({ onNext, goToSummary, goToCover, onPrev }) => {
       {onNext && (
         <button onClick={onNext}>
           <img
-            src="https://raw.githubusercontent.com/nayanesenhorinha/servidor_estaticos/refs/heads/main/alice/fi-rr-angle-small-right.png"
+            src={setaDireita}
             alt="Next"
             className="nav-icon"
             loading="lazy"

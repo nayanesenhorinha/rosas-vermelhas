@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import Navigation from './Navigation';
 import Footer from './Footer'; 
 
-const Chapter = ({   bookId, chapterNumber, onNext, goToSummary, goToCover, onPrev }) => {
+const Chapter = ({   bookId, chapterNumber, onNext, goToSummary, onPrev }) => {
 
   // Identificar qual conjunto de capítulos usar
   const getChapters = useCallback(() => {
@@ -38,7 +38,7 @@ const Chapter = ({   bookId, chapterNumber, onNext, goToSummary, goToCover, onPr
 
       const selectedText = selection.toString().trim();
       if (selectedText && chapterRef.current.contains(selection.anchorNode)) {
-        const additionalText = "\nCARROLL, Lewis. Editora Sona";
+        const additionalText = "\nCARROLL, Lewis. Editora Sem Nome";
         e.clipboardData.setData("text/plain", `"${selectedText}"${additionalText}`);
         e.preventDefault();
       }

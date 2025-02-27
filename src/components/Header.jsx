@@ -2,6 +2,15 @@ import React, { useState, useEffect, useCallback } from 'react';
 import chapters_looking_glass from '../control/chapters_looking_glass';
 import chapters_in_wonderland from '../control/chapters_in_wonderland';
 
+import menuBurger from '../assets/menu-burger.png';
+import alinhadoEsq from '../assets/alinhado-esquerda.png';
+import alinhadoDir from '../assets/alinhado-direita.png';
+import justificado from '../assets/justificado.png';
+import aumentarFonte from '../assets/aumentar-fonte.png';
+import diminuirFonte from '../assets/diminuir-fonte.png';
+import claro from '../assets/claro.png';
+import noturno from '../assets/noturno.png';
+
 const Header = ({ chapterIndex, bookId, title }) => {
 
 // Estados
@@ -258,7 +267,7 @@ return (
 
   <button onClick={toggleFontSizeBox}>
     <img
-      src="https://raw.githubusercontent.com/nayanesenhorinha/servidor_estaticos/refs/heads/main/alice/fi-rr-menu-burger.png"
+      src={menuBurger}
       alt="Configurações"
       loading="lazy"
     />
@@ -270,7 +279,7 @@ return (
     <div className='darkmode-option'>
       <button onClick={toggleDarkMode}>
         <img
-          src={isDarkMode ? 'https://raw.githubusercontent.com/nayanesenhorinha/alice/refs/heads/main/public/icons8-sol-24.png' : 'https://raw.githubusercontent.com/nayanesenhorinha/alice/refs/heads/main/public/icons8-sol-24%20(1).png' }
+          src={isDarkMode ? noturno : claro }
           alt={isDarkMode ? 'Ativar Modo Norturno' : 'Ativar modo Claro'}
           loading="lazy"
         />
@@ -286,7 +295,7 @@ return (
           className={`ajust-option ${selectedAlignment === 'justificado' ? 'active' : ''}`}
           onClick={() => adjustTextAlignment('justificado')}>
           <img
-            src="https://raw.githubusercontent.com/nayanesenhorinha/servidor_estaticos/refs/heads/main/alice/fi-rr-align-justify.png"
+            src={justificado}
             alt="Download"
             loading="lazy"
           />
@@ -296,7 +305,7 @@ return (
           className={`ajust-option ${selectedAlignment === 'esquerda' ? 'active' : ''}`}
           onClick={() => adjustTextAlignment('esquerda')}>
           <img
-            src="https://raw.githubusercontent.com/nayanesenhorinha/servidor_estaticos/refs/heads/main/alice/fi-rr-align-left.png"
+            src={alinhadoEsq}
             alt="Download"
             loading="lazy"
           />
@@ -306,7 +315,7 @@ return (
           className={`ajust-option ${selectedAlignment === 'direito' ? 'active' : ''}`}
           onClick={() => adjustTextAlignment('direito')}>
           <img
-            src="https://raw.githubusercontent.com/nayanesenhorinha/servidor_estaticos/refs/heads/main/alice/fi-rr-align-right.png"
+            src={alinhadoDir}
             alt="Download"
             loading="lazy"
           />
@@ -321,7 +330,7 @@ return (
       className={`ajust-option ${selectedFontSize === 'compacto' ? 'opaco' : ''}`}
       disabled={selectedFontSize === 'compacto'}
     >
-      <img src="https://raw.githubusercontent.com/nayanesenhorinha/alice/refs/heads/main/public/icons8-diminuir-fonte-24%20(1).png" />
+      <img src={diminuirFonte} />
     </button>
     </div>
   
@@ -332,7 +341,7 @@ return (
     className={`ajust-option ${selectedFontSize === 'baixa-visao' ? 'opaco' : ''}`}
     disabled={selectedFontSize === 'baixa-visao'}
   >
-    <img src="https://raw.githubusercontent.com/nayanesenhorinha/alice/refs/heads/main/public/icons8-aumentar-fonte-24%20(2).png" />
+    <img src={aumentarFonte} />
   </button>
       </div>
     </div>
