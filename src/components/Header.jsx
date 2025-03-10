@@ -237,6 +237,8 @@ useEffect(() => {
 
 return (
 <div className="header">
+  <div className="marg">
+    
   <button>
     <img
       src="https://placehold.co/20"
@@ -254,10 +256,12 @@ return (
       loading="lazy"
     />
   </button>
+  </div>
 
 
   <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
-
+    
+    <div className="marg-menu">
     <div className='darkmode-option'>
       <button onClick={toggleDarkMode}>
         <img
@@ -312,7 +316,7 @@ return (
       className={`ajust-option ${selectedFontSize === 'compacto' ? 'opaco' : ''}`}
       disabled={selectedFontSize === 'compacto'}
     >
-      <img src={diminuirFonte} />
+      <img src={aumentarFonte} />
     </button>
     </div>
   
@@ -323,12 +327,14 @@ return (
     className={`ajust-option ${selectedFontSize === 'baixa-visao' ? 'opaco' : ''}`}
     disabled={selectedFontSize === 'baixa-visao'}
   >
-    <img src={aumentarFonte} />
+    <img src={diminuirFonte} />
   </button>
       </div>
     </div>
+    </div>
   </div>
-</div>
+  </div>
+
 );};
 
 export default Header;
