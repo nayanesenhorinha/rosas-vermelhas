@@ -221,7 +221,7 @@ const updateThemeColor = (isDarkMode, isHeaderVisible) => {
   if (isDarkMode) {
     newThemeColor = "#131313"; // Preto no modo noturno
   } else if (isHeaderVisible) {
-    newThemeColor = "#F06CA3"; // Rosa quando o Header está visível
+    newThemeColor = "#131313"; // Rosa quando o Header está visível
   } else {
     newThemeColor = "#fefefe"; // Branco como padrão
   }

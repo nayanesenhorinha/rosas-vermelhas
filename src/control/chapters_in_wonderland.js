@@ -101,7 +101,7 @@ const chapters = {
           className: "chapter_text"
         },{
           text: "</br>ALICE’S RIGHT FOOT, ESQ.</br> HEARTHRUG,</br>NEAR THE FENDER,</br>(WITH ALICE’S LOVE).</br></br>",
-          className: "chapter_text chapter_text_italic"
+          className: "chapter_text"
         },{
           text: "Oh dear, what nonsense I’m talking!",
           className: "chapter_text"
@@ -527,28 +527,28 @@ const chapters = {
           className: "chapter_text"
         },{
           text: "’You are old, Father William,’ the young man said,<br/>‘And your hair has become very white;<br/>And yet you incessantly stand on your head—<br/>Do you think, at your age, it is right?’",
-          className: "chapter_text_cit chapter_text_italic"
+          className: "chapter_text_cit"
         },{
           text: "’In my youth,’ Father William replied to his son,<br/>‘I feared it might injure the brain;<br/>But, now that I’m perfectly sure I have none,<br/>Why, I do it again and again.’",
-          className: "chapter_text_cit chapter_text_italic"
+          className: "chapter_text_cit"
         },{
           text: "You are old,’ said the youth, ‘as I mentioned before,<br/>And have grown most uncommonly fat;<br/>Yet you turned a back- somersault in at the door—<br/>Pray, what is the reason of that?’",
-          className: "chapter_text_cit chapter_text_italic"
+          className: "chapter_text_cit"
         },{
           text: "’In my youth,’ said the sage, as he shook his grey locks,<br/>‘I kept all my limbs very supple<br/>By the use of this ointment—one shilling the box—<br/>Allow me to sell you a couple?’",
-          className: "chapter_text_cit chapter_text_italic"
+          className: "chapter_text_cit"
         },{
           text: "’You are old,’ said the youth, ‘and your jaws are too weak<br/>For anything tougher than suet;<br/>Yet you finished the goose, with the bones and the beak—<br/>Pray how did you manage to do it?’",
-          className: "chapter_text_cit chapter_text_italic"
+          className: "chapter_text_cit"
         },{
           text: "’In my youth,’ said his father, ‘I took to the law,<br/>And argued each case with my wife;<br/>And the muscular strength, which it gave to my jaw,<br/>Has lasted the rest of my life.’",
-          className: "chapter_text_cit chapter_text_italicc"
+          className: "chapter_text_cit"
         },{
           text: "’You are old,’ said the youth, ‘one would hardly suppose<br/>That your eye was as steady as ever;<br/>Yet you balanced an eel on the end of your nose—<br/>What made you so awfully clever?’",
-          className: "chapter_text_cit chapter_text_italic"
+          className: "chapter_text_cit"
         },{
           text: "’I have answered three questions, and that is enough,’<br/>Said his father; ‘don’t give yourself airs!<br/>Do you think I can listen all day to such stuff?<br/>Be off, or I’ll kick you down stairs!’",
-          className: "chapter_text_cit chapter_text chapter_text_italic"
+          className: "chapter_text_cit"
         },{
           text: "’That is not said right,’ said the Caterpillar.",
           className: "chapter_text"
@@ -1792,19 +1792,19 @@ const chapters = {
       className: "chapter_text"
     },{ 
       text: "’’Will you walk a little faster?’ said a whiting to a snail. ‘There’s a porpoise close behind us, and he’s treading on my tail. See how eagerly the lobsters and the turtles all advance! They are waiting on the shingle—will you come and join the dance?" ,
-      className: "chapter_text chapter_text_italic"
+      className: "chapter_text"
     },{ 
       text: "Will you, won’t you, will you, won’t you, will you join the dance? Will you, won’t you, will you, won’t you, won’t you join the dance?" ,
-      className: "chapter_text chapter_text_italic"
+      className: "chapter_text"
     },{ 
       text: "’’You can really have no notion how delightful it will be When they take us up and throw us, with the lobsters, out to sea!’ But the snail replied ‘Too far, too far!’ and gave a look askance— Said he thanked the whiting kindly, but he would not join the dance. Would not, could not, would not, could not, would not join the dance. Would not, could not, would not, could not, could not join the dance." , 
-      className: "chapter_text chapter_text_italic"
+      className: "chapter_text"
     },{ 
       text: "’’What matters it how far we go?’ his scaly friend replied. ‘There is another shore, you know, upon the other side. The further off from England the nearer is to France— Then turn not pale, beloved snail, but come and join the dance." ,
-      className: "chapter_text chapter_text_italic"
+      className: "chapter_text"
     },{ 
       text: "Will you, won’t you, will you, won’t you, will you join the dance? Will you, won’t you, will you, won’t you, won’t you join the dance?‘‘" ,
-      className: "chapter_text chapter_text_italic"
+      className: "chapter_text"
     },{ 
       text: "’Thank you, it’s a very interesting dance to watch,’ said Alice, feeling very glad that it was over at last: ‘and I do so like that curious song about the whiting!’" ,
       className: "chapter_text"
