@@ -10,8 +10,8 @@ const infos = {
     date: "2025-03-28",
     format: "ebook",
     audience: "Infantojuvenil",
-    genre: ["Fantasia", "Aventura"]
-
+    genre: ["Fantasia", "Aventura"],
+    
 
 }
 

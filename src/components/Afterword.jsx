@@ -6,7 +6,6 @@ import Header from '../components/Header';
 const Afterword = ({ 
   onPrev,
   onNext, 
-  goToCover,
   goToSummary }) => {
 
     const chapterTitle = "Afterword";
