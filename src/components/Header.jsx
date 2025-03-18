@@ -262,19 +262,16 @@ return (
   <div className={`menu-config ${isFontSizeBoxVisible ? 'visible' : ''}`}>
     
     <div className="marg-menu">
-    <div className='darkmode-option'>
-      <button onClick={toggleDarkMode}>
-        <img
-          src={isDarkMode ? noturno : claro }
-          alt={isDarkMode ? 'Ativar Modo Norturno' : 'Ativar modo Claro'}
-          loading="lazy"
-        />
-      </button>
-      <div className='align-options-space'><span>.</span></div>
 
-    </div>
-
-    <div className="align-options">
+      <div className='darkmode-option'>
+        <button onClick={toggleDarkMode}>
+          <img
+            src={isDarkMode ? noturno : claro }
+            alt={isDarkMode ? 'Ativar Modo Norturno' : 'Ativar modo Claro'}
+            loading="lazy"
+          />
+        </button>
+      </div>
 
       <div className='align-options-buttons'>
         <button
@@ -308,32 +305,30 @@ return (
         </button>
       </div>
 
-      <div className='align-options-space'><span>.</span></div>
-
       <div className='font-options-button'>
-          <button
-      onClick={() => adjustFontSize('decrease')}
-      className={`ajust-option ${selectedFontSize === 'compacto' ? 'opaco' : ''}`}
-      disabled={selectedFontSize === 'compacto'}
-    >
-      <img src={aumentarFonte} />
-    </button>
-    </div>
-  
-  <div className='align-options-space'><span>.</span></div>
-<div className='font-options-button'>
-  <button
-    onClick={() => adjustFontSize('increase')}
-    className={`ajust-option ${selectedFontSize === 'baixa-visao' ? 'opaco' : ''}`}
-    disabled={selectedFontSize === 'baixa-visao'}
-  >
-    <img src={diminuirFonte} />
-  </button>
+        <button
+          onClick={() => adjustFontSize('decrease')}
+          className={`ajust-option ${selectedFontSize === 'compacto' ? 'opaco' : ''}`}
+          disabled={selectedFontSize === 'compacto'}>
+            <img src={aumentarFonte} />
+        </button>
       </div>
+  
+      <div className='font-options-button'>
+        <button
+          onClick={() => adjustFontSize('increase')}
+          className={`ajust-option ${selectedFontSize === 'baixa-visao' ? 'opaco' : ''}`}
+          disabled={selectedFontSize === 'baixa-visao'}
+        >
+        <img src={diminuirFonte} />
+      </button>
+      </div>
+
     </div>
-    </div>
+
   </div>
-  </div>
+  
+</div>
 
 );};
 

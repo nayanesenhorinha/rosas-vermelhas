@@ -19,7 +19,7 @@ const Afterword = ({
     }, [chapterTitle]);
   
   return (
-    <div className="page chapter_page">
+    <div className="page afterword">
 
       <div className="intro_head">
         
@@ -46,7 +46,7 @@ const Afterword = ({
         onNext={onNext} 
         goToSummary={goToSummary} 
         />
-      <Header />
+      <Header title={"Alice"}/>
     </div>
   );
 };
