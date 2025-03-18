@@ -118,7 +118,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -2rem;
+    
 }
 
 .popup-infos .popup-cover {
@@ -144,6 +144,7 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    margin-top: 2rem;
 }
 
 .pop-buttons button {
