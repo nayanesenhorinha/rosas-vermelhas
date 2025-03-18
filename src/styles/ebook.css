@@ -78,6 +78,11 @@ body {
 
 
 */
+
+.ebook {
+    position: relative;
+} 
+
 .cover {
     display: flex;
     flex-direction: column;
