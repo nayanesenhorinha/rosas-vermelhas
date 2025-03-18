@@ -56,7 +56,7 @@ function App() {
 
           <div className="popup-infos">
             <img 
-            src="https://placehold.co/50x75" 
+            src="https://placehold.co/530x800" 
             alt="Imagem Placeholder" 
             loading="lazy" 
             className='popup-cover'

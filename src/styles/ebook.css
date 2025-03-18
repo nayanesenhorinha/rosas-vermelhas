@@ -144,7 +144,6 @@ body {
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 2rem;
 }
 
 .pop-buttons button {
