@@ -20,7 +20,7 @@ const LookingGlass = ({
 
   return (
     <div className="page">
-      Ilustração de prefácio 2
+      Capa livro 2
       <Navigation 
         onPrev={onPrev} 
         onNext={onNext} 

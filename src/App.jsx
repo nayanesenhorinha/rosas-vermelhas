@@ -41,16 +41,34 @@ function App() {
       <MetaTags />
       <Book />
 
-      {showPopup && (
-        <div className="popupStyle">
-          <p className='titulo'>Quer instalar nosso app?</p>
-          <p className='descricao'>Instalando o app você pode fazer a leitura offline direto e facilidade de acesso ao ebook</p>
+      
 
-        <div className="pop-buttons">
-          <button onClick={installPWA}>Instalar</button>
-          <button onClick={() => setShowPopup(false)}>Fechar</button>
+      {showPopup && (
+        <div className="popup">
+          <img 
+            src="https://placehold.co/25" 
+            alt="Imagem Placeholder" 
+            loading="lazy" 
+            className="img-icon"
+          />
+
+          <img 
+            src="https://placehold.co/50x75" 
+            alt="Imagem Placeholder" 
+            loading="lazy" 
+            className='popup-cover'
+          />
+
+          <p className='titulo'>Alice</p>
+          <p className="subtitulo">Lewis Carroll</p>
+          <p className='descricao'>Uma jovem chamada Alice segue um coelho branco e acaba em um mundo fantástico repleto de criaturas e situações inusitadas.</p>
+
+          <div className="pop-buttons">
+            <button onClick={() => setShowPopup(false)}>Ler online</button>
+            <button onClick={installPWA}>Fazer download</button>
+          </div>
         </div>
-        </div>
+        
       )}
 
 

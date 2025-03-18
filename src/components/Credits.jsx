@@ -19,15 +19,16 @@ const Credits = ({onNext, onPrev, goToSummary}) => {
     <div className="page credits">
 
 
-      
+<div className="intro_head">
+        
+        <p className='chapter_subtitle'>Credits</p>  
+        <h2 className="chapter_title">Pintandoa as rosas de vermelho</h2>
+        
+      </div>
       
       <div className='credits_container'>
 
-        <img 
-        src="https://placehold.co/25" 
-        alt="Imagem Placeholder" 
-        loading="lazy" 
-      />
+       
    
 
         
@@ -52,11 +53,11 @@ const Credits = ({onNext, onPrev, goToSummary}) => {
 
         <div className='tr'>
           <p className='th ft'>Agradecimentos</p>
-          <p className='th'>Laura<br/>João Victor<br/>Paulo César Castro</p>
+          <p className='th'>Nomes</p>
         </div>
 
      
-        <p className='tfooter'>Editora Sei lá ainda<br/>2025</p>
+        <p className='tfooter'>Alice<br/>Editora Sei lá ainda<br/>2025</p>
     </div>
 
       <Navigation 

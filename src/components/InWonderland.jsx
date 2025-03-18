@@ -20,7 +20,7 @@ const InWonderland = ({
 
   return (
     <div className="page">
-      Ilustração de prefácio
+      Capa livro 1
       <Navigation 
         onPrev={onPrev} 
         onNext={onNext} 
