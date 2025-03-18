@@ -81,7 +81,7 @@ body {
 
 .ebook {
     position: relative;
-  }
+}
 
 
 .cover {
@@ -111,6 +111,7 @@ body {
     padding: 1.5625rem;
     padding-top: 2.555rem;
     overflow: hidden;
+    top: 0;
 }
 
 .popup-infos {
