@@ -44,6 +44,8 @@ function App() {
       
 
       {showPopup && (
+      
+
         <div className="popup">
           <img 
             src="https://placehold.co/25" 
@@ -52,16 +54,17 @@ function App() {
             className="img-icon"
           />
 
-          <img 
+          <div className="popup-infos">
+            <img 
             src="https://placehold.co/50x75" 
             alt="Imagem Placeholder" 
             loading="lazy" 
             className='popup-cover'
-          />
+            />
 
-          <p className='titulo'>Alice</p>
-          <p className="subtitulo">Lewis Carroll</p>
-          <p className='descricao'>Uma jovem chamada Alice segue um coelho branco e acaba em um mundo fantástico repleto de criaturas e situações inusitadas.</p>
+            <p className='titulo'>Alice</p>
+            <p className="subtitulo">Lewis Carroll</p>
+          </div>
 
           <div className="pop-buttons">
             <button onClick={() => setShowPopup(false)}>Ler online</button>

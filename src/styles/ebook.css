@@ -81,7 +81,8 @@ body {
 
 .ebook {
     position: relative;
-} 
+  }
+
 
 .cover {
     display: flex;
@@ -106,19 +107,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 1.5625rem;
     padding-top: 2.555rem;
     overflow: hidden;
-    top:0;
 }
 
-.popup-cover {
-    width: 50%;
-    margin-top: 4rem;
-    max-width: 180px;
+.popup-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
 }
 
-.popup .titulo {
+.popup-infos .popup-cover {
+    max-width: 200px;
+    width: 100%;
+}
+
+.popup-infos .titulo {
     margin-top: 1.8rem;
     font-size: 1rem;
     font-weight: bold;
@@ -126,24 +133,17 @@ body {
     font-family: var(--font-text);
 }
 
-.popup .subtitulo {
+.popup-infos .subtitulo {
     margin-top: 0.5rem;
 }
 
-.popup .descricao {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    padding: 1.2rem 1rem;
-    text-align: center;
-}
 
 .pop-buttons {
-    position: absolute;
-    bottom: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 2rem;
 }
 
 .pop-buttons button {
