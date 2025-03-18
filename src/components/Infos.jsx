@@ -29,6 +29,7 @@ return (
           src="https://placehold.co/25" 
           alt="Imagem Placeholder" 
           loading="lazy" 
+          className='img-icon'
         />
       <p>{autor}</p>
     </div>

@@ -74,15 +74,11 @@ body {
     }
 }
 
-/* CAPA 
-
-
-*/
+/* CAPA */
 
 .ebook {
     position: relative;
 }
-
 
 .cover {
     display: flex;
@@ -114,57 +110,52 @@ body {
     top: 0;
 }
 
-.popup-infos {
+.popoup .popup-infos {
     display: flex;
     flex-direction: column;
     align-items: center;
     
+    .popup-cover {
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .titulo {
+        margin-top: 1.8rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--preto);
+        font-family: var(--font-text);
+    }
+
+    .subtitulo {
+        margin-top: 0.5rem;
+    }
 }
 
-.popup-infos .popup-cover {
-    max-width: 200px;
-    width: 100%;
-}
 
-.popup-infos .titulo {
-    margin-top: 1.8rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--preto);
-    font-family: var(--font-text);
-}
-
-.popup-infos .subtitulo {
-    margin-top: 0.5rem;
-}
-
-
-.pop-buttons {
+.popup .pop-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
     margin-top: 2rem;
+
+    button {
+        height: 40px;
+        border-radius: 6px;
+        color: var(--branco);
+        font-family: var(--font-text);
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--preto);
+    }
+
+    button:first-child {
+        background-color: #e4e4e4;
+        color: var(--preto);
+    }
 }
-
-.pop-buttons button {
-    height: 40px;
-    border-radius: 6px;
-    color: var(--branco);
-    font-family: var(--font-text);
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: var(--preto);
-    
-}
-
-.pop-buttons button:first-child {
-    background-color: #e4e4e4;
-    color: var(--preto);
-
-}
-
-
 
 
 /* INFOS::FOLHA DE ROSTO */
@@ -173,24 +164,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
-}
+    overflow: hidden;}
 
 .info_head {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.info_head img {
-    width: 25px;
-}
+    .img-icon {
+        width: 25px;
+    }
 
-.info_head p {
-    margin-top: 1.6rem;
-    font-weight: bold;
-    font-size: 1rem;
-    color: var(--vermelho);
+    p {
+        margin-top: 1.6rem;
+        font-weight: bold;
+        font-size: 1rem;
+        color: var(--preto);
+    }
 }
 
 .info_titulo p {
